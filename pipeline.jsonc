@@ -1,22 +1,4 @@
 {
-    "eosio": {
-        "environment": {
-            "IMAGE_TAG": "1.8.0-rc2",
-            "HELPER_ENABLED": true
-        }
-    },
-    "eosio-base-images":
-    {
-        "pipeline-branch": "release/1.8.x"
-    },
-    "eosio-lrt":
-    {
-        "environment":
-        {
-            "BUILD_FLAGS": "-y -P -m",
-            "IMAGE_TAG": "_1-8-0-rc2"
-        }
-    },
     "eos-multiversion-tests":
     {
         "environment":
