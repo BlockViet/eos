@@ -1,7 +1,7 @@
 FROM ubuntu:18.04 as builder
 ARG branch=trucnx/v1.8.0
 
-RUN apt-get update && apt-get -y install sudo openssl git ca-certificates vim&& rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get -y install sudo build-essential openssl git ca-certificates vim&& rm -rf /var/lib/apt/lists/*
 RUN git clone -b $branch https://github.com/BlockViet/eos.git --recursive
 
 WORKDIR /
